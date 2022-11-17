@@ -1,0 +1,18 @@
+import os  # defines the OS for use with CLS commands later
+os.system ("cls") #gets rid of screen/terminal clutter at the start of the program
+import random
+
+secret_number= (random.randint (1,10))
+#secret_number = 9
+guess_count = 0
+guess_limit = 3
+
+while guess_count < guess_limit:
+    guess = int(input('Guess the number between 1-10!: '))
+    guess_count += 1
+    if guess == secret_number:
+        print('You Won!')
+        break #breaks out of the loop
+else:
+    print('Sorry, you failed')
+    

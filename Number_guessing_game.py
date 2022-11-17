@@ -3,7 +3,7 @@ lives = 3
 secretnumber= (random.randint (1,10))
 #secretnumber = 5 // define the secret number rather than use random for testing purposes 
 # print (secretnumber) // show the secret number at the start of the game for testing purposes
-print ('Secret number has been selected! You have 3 lives. Can you guess it?')
+print ('Secret number between 1 and 10 has been selected! You have 4 lives. Can you guess it?')
 guess = input ('Take a guess! ')
 
 
@@ -24,4 +24,3 @@ if lives == 0 and int(guess) != secretnumber:
 elif int(guess) == secretnumber:
     print(f'You did it! The secret number was {secretnumber} and you guessed it with {lives} lives remaining ')
     
- 
