@@ -1,5 +1,7 @@
-import os  # defines the OS for use with CLS commands later
-os.system ("cls") #gets rid of screen/terminal clutter at the start of the program
+#import os  # defines the OS for use with CLS commands later
+#os.system ("cls") #gets rid of screen/terminal clutter at the start of the program
+
+print("\033[H\033[J", end="")
 import string
 string.ascii_letters 
 'abcdefghiklmnopqrstuvwxyz'
@@ -25,3 +27,4 @@ for xyz in range(27):
     count +=1
     while typed.upper() != (rnd_letter.upper()): 
         typed=input(f'Wrong! Try again! Type {(rnd_letter.upper())} >> ')
+    
