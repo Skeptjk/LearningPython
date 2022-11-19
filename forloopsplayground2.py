@@ -1,7 +1,7 @@
 #import os  # defines the OS for use with CLS commands later
 #os.system ("cls") #gets rid of screen/terminal clutter at the start of the program
 
-print("\033[H\033[J", end="")
+print("\033[H\033[J", end="") # this line = sneaky way to clear screen before program starts
 import string
 string.ascii_letters 
 'abcdefghiklmnopqrstuvwxyz'
