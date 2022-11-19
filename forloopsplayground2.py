@@ -14,12 +14,12 @@ errorcount=0
 t0=time.time()
 
 rnd_letter = random.choice(string.ascii_letters) #defines rnd_letter as a random letter from the alphabet
-#print(f'rnd_letter = {rnd_letter.upper()}') #prints the random letter just as a debug thing so I can see that part is working
+#print(f'rnd_letter = {rnd_letter.upper()}') # this line for debugging purposes - prints the random letter just as a debug thing so I can see that part is working
 print('Welcome to the type letters from the alphabet in random order game!')
-#for xyz in ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']:
+#for xyz in ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']: /// Ignore this, snippet of old code.
 for xyz in range(27):
     if xyz==26:
-        print("\033[H\033[J", end="")
+        print("\033[H\033[J", end="") #clears the screen without being OS dependent 
         t1=time.time()
         tt = t1-t0
         print('You did it! This is a success story for the ages!')
@@ -34,5 +34,7 @@ for xyz in range(27):
     
     while typed.upper() != (rnd_letter.upper()): 
         errorcount+=1
+        if errorcount > 4:
+            print(f'You have made {errorcount} mistakes! Are you even trying???')
         typed=input(f'Wrong! Try again! Type {(rnd_letter.upper())} >> ')
     
