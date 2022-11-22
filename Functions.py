@@ -1,6 +1,8 @@
 #Author: https://github.com/Skeptjk/
 # Licence: None - Don't steal my shit
 
+#Messing about, first time trying to use a 'function' 
+
 print("\033[H\033[J", end="")
 
 x1=input(f'lets learn about functions')
