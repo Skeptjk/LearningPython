@@ -1,43 +1,43 @@
 import os
-os.system ("cls")
+
+os.system("cls")
 
 
-started =False
+started = False
 
-print('Welcome to the car game')
+print("Welcome to the car game")
 
 while True:
-    usrcmd=input('Type a command > ').lower()
+    usrcmd = input("Type a command > ").lower()
     if usrcmd == "help":
-        print('''
+        print(
+            """
 start - to start the car
 stop  - to stop the car
 quit  - to exit
-    ''')
+    """
+        )
 
     elif usrcmd == "start":
         if started:
-            print('Car is already started')
+            print("Car is already started")
         else:
             started = True
-            print('Car started, ready to go?')
-        
-      
-    elif usrcmd == 'stop':
+            print("Car started, ready to go?")
+
+    elif usrcmd == "stop":
         if not started:
-            print ('Car already stopped')
+            print("Car already stopped")
         else:
             started = False
-            print('Car stopped!')
- 
-        
-        
-    elif usrcmd == 'quit':
-        #gameloop = False
+            print("Car stopped!")
+
+    elif usrcmd == "quit":
+        # gameloop = False
         break
-    
+
     else:
         print("I don't understand that")
-        
-print('Thanks for playing!')
+
+print("Thanks for playing!")
 quit()
